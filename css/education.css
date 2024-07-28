@@ -1,0 +1,317 @@
+/*education section*/
+
+/* Education section specific styles */
+
+/* 
+.education-section h1 {
+    font-family: 'Custom Font', sans-serif; 
+    font-weight: 400;
+    font-size: 56px;
+    line-height: normal;
+    margin-bottom: initial;
+}
+
+.education-section h5 {
+ 
+    font-family: 'Custom Font', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.2;
+}
+
+.education-section p {
+
+    font-family: 'Custom Font', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+}  */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Questrial&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Questrial&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Questrial&family=Raleway:ital,wght@0,100..900;1,100..900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+.education-section h1,
+.education-section h2,
+.education-section h3,
+.education-section h4,
+.education-section h5,
+.education-section p,
+.education-section a,
+.education-section li,
+.education-section ul {
+    padding: initial; /* Reset padding */
+    margin: initial;  /* Reset margin */
+    font-style: initial; /* Reset font style */
+    font-weight: initial; /* Reset font weight */
+    letter-spacing: initial; /* Reset letter spacing */
+    line-height: initial; /* Reset line height */
+    font-family: initial; /* Reset font family */
+}
+
+.education-heading {
+    font-size: 66px;
+    font-weight: 400;
+}
+
+.education-section {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    padding: 20px 0px;
+    margin: 0px auto;
+    margin-top: 2rem;
+}
+
+.education-section > * {
+    flex: 1;
+    margin-bottom: 30px;
+}
+
+.education-card-container {
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+}
+
+
+.education-card-border {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 2px solid #a9a7f9; /* $educationCardBorder */
+    opacity: 0;
+    pointer-events: none;
+}
+
+.education-card {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 30px;
+}
+
+
+.education-card-wrapper {
+    position: relative;
+    margin-bottom: 20px;
+}
+.education-card-border {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0; /* Initial width set to 0 */
+    border-right: 0px;
+    border-left: 0px;
+    border-top: 0px;
+    border-bottom: 2px solid #a9a7f9; /* Only bottom border */
+    opacity: 0; /* Initially hidden */
+    pointer-events: none;
+    transition: width 0.6s ease-in-out, opacity 0.6s ease-in-out; /* Add transition for both width and opacity */
+}
+.education-card-wrapper:hover .education-card-border {
+    width: 70%; /* Full width on hover */
+    /* border-bottom: 2px; */
+    opacity: 1; /* Make it visible on hover */
+}
+
+.education-head {
+    display: flex;
+    flex-direction: row;
+}
+
+.education-section h1{
+    font-family: "Raleway";
+    font-weight: 400;
+    opacity: 1;
+
+}
+.education-section h5 {
+    font-family: "Raleway",sans-serif;
+    font-size: 34px;
+    font-weight: 600;
+    margin-bottom: 0.2rem;
+    text-transform:initial;
+    letter-spacing: normal;
+    opacity: 1;
+}
+.education-section p{
+    padding-top: 7px;
+    font-size: 23px;
+    font-family: "Red Hat Display","Roboto";
+    font-weight: 400;
+    /* padding-top: 6px; */
+    /* padding-bottom: 5px; */
+}
+.education-section ul {
+    margin-top: 0.5rem;
+    padding-left: 1.5rem; /* Example padding for list indentation */
+    list-style-type: disc; /* You can use circle, square, or none */
+}
+.education-section ul ::marker{
+    color: gray;
+}
+.education-section li{
+    font-family: "Red Hat Display";
+}
+/* .education-section li::marker{
+    list-style-type: disc;;
+} */
+.education-text-school h5{
+    margin: 0;
+    font-size: 20px;
+    font-weight: bold;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    height: 27px;
+    padding-bottom: 20px;
+}
+
+/* .education-text-school {
+    margin: 0 !important;
+    font-size: 28px !important;
+    font-weight: bold !important;
+    text-overflow: ellipsis !important;
+    overflow: hidden !important;
+    white-space: nowrap !important;
+    height: 27px !important;
+} */
+
+.education-roundedimg {
+    object-fit: cover;
+    margin-right: 2rem;
+    width: 6.5rem;
+    height: 6.5rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3); /* $lightBoxShadowDarker */
+    border-radius: 50%;
+}
+
+.education-card-right {
+    max-width: 70%;
+}
+
+/* .education-text-subHeader {
+    color: #000000;
+    font-weight: 700;
+    font-size: 19px;
+    margin: 0px;
+    padding-top: 0.8rem;
+    line-height: normal;
+} */
+.education-section h5.education-text-subHeader {
+    color: #000000; /* $textColor */
+    font-weight: 600;
+    font-size: 24px;
+    margin: 0px;
+    padding-top: 0.8rem;
+    line-height: normal;
+}
+
+/* .education-text-duration {
+    color: #000000;
+    margin: 0px;
+    padding-top: 0.5rem;
+} */
+.education-section p .education-text-duration {
+    color: #000000; /* $titleColor */
+    font-size: 19px;
+    margin: 0px;
+    padding-top: 0.5rem;
+}
+
+.education-text-desc {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.education-text-bullets > ul {
+    margin-top: 0.5rem;
+}
+
+.education-text-bullets > ul > li {
+    font-weight: 250;
+    margin-left: 25px;
+    list-style-type: disc;
+    margin-bottom: 0.2rem; 
+}
+/* Media Queries */
+@media (max-width: 1380px) {
+    .education-card-container {
+        padding-top: 0px;
+    }
+    .education-heading {
+        font-size: 40px;
+    }
+    .education-text-subtitle {
+        font-size: 18px;
+        text-align: center;
+    }
+    .education-card {
+        flex-direction: column;
+        padding-bottom: 10px;
+    }
+    .education-card-right {
+        max-width: 90%;
+    }
+    .education-card-border {
+        width: 90%;
+    }
+    .education-text-subHeader {
+        padding-top: 0.5rem;
+        font-size: 16px;
+    }
+    .education-text-school {
+        font-size: 20px;
+        height: 23px;
+     
+    }   
+
+    .education-text-duration {
+        font-size: 16px;
+    }
+    .education-roundedimg {
+        width: 4rem;
+        height: 4rem;
+        margin-bottom: 0.5rem;
+        margin-right: 0px;
+    }
+}
+
+@media (max-width: 768px) {
+    .education-card-container {
+        padding-top: 0px;
+    }
+    .education-heading {
+        font-size: 30px;
+        text-align: center;
+    }
+    .education-text-subtitle {
+        font-size: 16px;
+    }
+    .education-card {
+        text-align: center;
+    }
+    .education-card-right {
+        max-width: 100%;
+    }
+    .education-card-border {
+        width: 100%;
+    }
+    .education-roundedimg {
+        margin-top: 10px;
+        width: 4rem;
+        height: 4rem;
+        margin-bottom: 1rem;
+        margin-right: 0;
+    }
+    .education-text-bullets > ul {
+        max-width: 80%;
+        margin: auto;
+    }
+      
+}
+
+/*end of education section*/
