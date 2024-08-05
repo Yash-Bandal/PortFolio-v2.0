@@ -3,19 +3,19 @@ document.addEventListener('contextmenu', function(e) {
     e.preventDefault();
 });
 
-// Disable Keyboard Shortcuts
-document.onkeydown = function(e) {
-    if (e.key === 'F12' || 
-        (e.ctrlKey && e.shiftKey && e.key === 'I') || 
-        (e.ctrlKey && e.shiftKey && e.key === 'J') || 
-        (e.ctrlKey && e.key === 'U') || 
-        (e.ctrlKey && e.key === 'S') || 
-        (e.ctrlKey && e.key === 'H') || 
-        (e.ctrlKey && e.key === 'A')) {
-        e.preventDefault();
-        return false;
-    }
-};
+// // Disable Keyboard Shortcuts
+// document.onkeydown = function(e) {
+//     if (e.key === 'F12' || 
+//         (e.ctrlKey && e.shiftKey && e.key === 'I') || 
+//         (e.ctrlKey && e.shiftKey && e.key === 'J') || 
+//         (e.ctrlKey && e.key === 'U') || 
+//         (e.ctrlKey && e.key === 'S') || 
+//         (e.ctrlKey && e.key === 'H') || 
+//         (e.ctrlKey && e.key === 'A')) {
+//         e.preventDefault();
+//         return false;
+//     }
+// };
 
 var magnets2 = document.querySelectorAll('.magneticCV');
 var strength2 = 50;
@@ -49,4 +49,4 @@ function initScrollReveal() {
     sr.reveal('.skills-box', { origin: 'right', distance: '80px', duration: 2000, reset: true, delay: 100 });
     sr.reveal('.form-control', { origin: 'right', distance: '80px', duration: 2000, reset: true, delay: 100 });
 }
-``
+
