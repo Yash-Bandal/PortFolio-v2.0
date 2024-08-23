@@ -1,7 +1,7 @@
-// // Disable Right-Click
-// document.addEventListener('contextmenu', function(e) {
-//     e.preventDefault();
-// });
+// Disable Right-Click
+document.addEventListener('contextmenu', function(e) {
+    e.preventDefault();
+});
 
 // // Disable Keyboard Shortcuts
 // document.onkeydown = function(e) {
