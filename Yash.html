@@ -273,7 +273,7 @@
                             </span>
                         </a>
                     </li>
-                    <li class="nav-button">
+<!--                     <li class="nav-button">
                         <a href="css/cv.pdf">
                             <div class="col">
                                 <div class="display-block">
@@ -288,7 +288,33 @@
                                 </div>
                             </div>
                         </a>
+                    </li> -->
+
+
+                  <li class="nav-button">
+                        <a href="css/cv.pdf" download="Yash_CV.pdf">
+                            <div class="col">
+                                <div class="display-block">
+                                    <div class="magneticCV">
+                                        <button type="button" class="btn1 my-buttonCV" name="button" 
+                                            onclick="
+                                                var menuBtn = document.getElementById('myNavMenu');
+                                                if (menuBtn.className === 'nav-menu') {
+                                                    menuBtn.className += ' responsive';
+                                                } else {
+                                                    menuBtn.className = 'nav-menu';
+                                                }">
+                                            <span>Download CV
+                                                <i style="font-size: 18px;" class="uil uil-file-alt"></i>
+                                            </span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
                     </li>
+                    
+                    
                     <script src="js/scriptCV.js"></script>
                     <li class="btn btn-link btn-menu">
                         <div class="btn-click magnetic" data-strength="20" data-strength-text="10">
