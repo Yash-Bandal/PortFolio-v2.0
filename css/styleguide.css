@@ -1208,21 +1208,34 @@ video.overlay {
      font-size: 20px;
  }
 
+
 /* ----- MAIN BOX ----- */
-.sectionABT{
+.sectionABT {
     padding-block: 5em;
     background: var(--body-color);
 }
-.rowABT{
+.aboutABT-info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.aboutABT-info img {
+    max-width: 330px;
+}
+.rowABT {
     display: flex;
     justify-content: space-between;
     width: 100%;
-    gap: 50px;
+    gap: 40px;
 }
-.colABT{
+
+.colABT {
     display: flex;
     width: 50%;
 }
+
 
 /* -- ## --- RESUABLE CSS -- ## -- */
 .top-headerABT{
@@ -1249,6 +1262,7 @@ video.overlay {
     font-weight: 600;
     color: var(--text-color-second);
     margin-bottom: 15px;
+    text-align: left;
 }
 /* ----- ABOUT INFO ----- */
 /* .aboutABT-info{
@@ -1316,10 +1330,16 @@ video.overlay {
     border-radius: 5px;
 }
 
-.badge-containers{
+/* .badge-containers{
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
+} */
+.badge-containers {
+    display: flex;
+    gap: 10px;
+    padding: 0px 0px 18px 0px
+    /* margin-top: -20px; */
 }
 .badge-containers span img{
     /* font-size: 14px;
@@ -1333,7 +1353,7 @@ video.overlay {
     transform: scale(1.15);
 }
 .badg {
-    display: inline-block;
+/*     display: inline-block; */
     transition: transform 0.5s ease, opacity 0.5s ease;
     opacity: 0.8;
 }
@@ -1346,6 +1366,40 @@ video.overlay {
     opacity: 1;
 }
 
+@media screen and (max-width: 900px) {
+    .aboutABT-info {
+        margin: auto;
+        width: 90%;
+    }
+
+    .aboutABT-info img {
+        margin: auto;
+        max-width: 320px;
+    }
+
+    .rowABT {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* margin: auto; */
+        flex-wrap: wrap;
+    }
+    .colABT2{
+        width: 100%;
+        /* display: flex;
+        flex-wrap: wrap; */
+    }
+    .badge-containers {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-bottom: 10px;
+        padding: 10px;
+    }
+    #abt{
+        text-align: center;
+    }
+}
 
 
 /*-----------------AboutEnd--------------------*/
