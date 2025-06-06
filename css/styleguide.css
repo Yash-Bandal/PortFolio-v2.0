@@ -709,9 +709,8 @@ video.overlay {
     gap: 2rem;
     margin-bottom: 2rem;
     margin-top: 2rem;
-
     flex-wrap: wrap; 
-    /* width: 100%; */
+ 
   }
   
   .about-details-container {
@@ -721,11 +720,11 @@ video.overlay {
     margin: auto;
   }
   
-  .about-containers,
+  /* .about-containers,
   .about-details-container {
     display: flex;
-    /* width: 80vw; */
-  }
+
+  } */
 
   .details-container {
     padding: 1.5rem;
@@ -736,81 +735,194 @@ video.overlay {
     border-color: rgb(163, 163, 163);
     text-align: center;
     transition: transform 0.5s ease, box-shadow 0.5s ease;
-    /* display: flex; */
-    flex-direction: column;  /*see this*?
-    /* margin-bottom: 1rem; */
-  
+    flex-direction: column;  
   }
-  .details-container:hover
+
+
+
+  /* .details-container:hover
   {
     transform: scale(1.05);
-    box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px -10px; /* $lightBoxShadowDark */
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px -10px;
+
+    
+  } */
+ 
+  
+/* ------------------------- Projects Section Styles -------------------------------------------------- */
+/* Base styles for Projects section */
+.Proj {
+    padding: 2rem;
+    margin: 0 auto;
+    /* max-width: 1440px; */
+    width: 80vw;
+}
+
+.experience-details-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-containers {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+
+.details-container:hover {
+    transform: scale(1.05);
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px -10px;
+    /* $lightBoxShadowDark */
     /* transition: 0.8s; */
     /* transition: transform 0.5s ease, box-shadow 0.5s ease; */
-    
-  }
-  /* .about-containers {
-    display: flex;
-    flex-wrap: wrap; 
-    gap: 2rem; 
-}
 
-.details-container {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    background: white;
+}
+.project-img {
     border-radius: 2rem;
-    border: rgb(53, 53, 53) 0.1rem solid;
+    width: 90%;
+    height: 90%;
+}
+
+.project-title {
+    margin: 1rem;
+    color: black;
+}
+
+.project-btnPr {
+    color: black;
     border-color: rgb(163, 163, 163);
-    text-align: center;
-    transition: transform 0.5s ease, box-shadow 0.5s ease;
-    margin-bottom: 1rem;
-} */
+}
 
-/* first  */
-/*   @media screen and (max-width: 760px) {
+/* Media Queries */
+@media (max-width: 1200px) {
     .about-containers {
-      flex-direction: column;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
     }
-  
-    .details-container, .color-container {
-      width: 100%;
-      margin-bottom: 1rem; /* Add margin for spacing between stacked containers */
-  
-    }
-  }
- */
-@media screen and (max-width: 760px) {
-    .about-containers {
-        flex-direction: column;
+}   
+
+@media (max-width: 768px) {
+    .Proj {
+        padding: 1rem;
     }
 
-    .details-container,
-    .color-container {
-        /* display: flex;
-        flex-direction: column; */
-        /* margin: auto; */
-        /* width: 100%; */
+    .about-containers {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .details-container {
+        padding: 1rem;
+        margin: 0 1rem;
+    }
+
+    .project-img {
+        /* max-height: 200px; */
+        object-fit: cover;
+    }
+
+    .btnPr-container {
+        /* flex-direction: column; */
+        gap: 1rem;
+    }
+
+    .contentPara {
+        /* font-size: 0.9rem;
+        padding: 0.5rem; */
+        display: none;
+    }
+
+       
+}
+
+@media (max-width: 480px) {
+    .Proj {
+        padding: 0.5rem;
+    }
+
+    .details-container {
+        margin: 0 0.5rem;
+        border-radius: 1rem;
+    }
+
+    /* .project-img {
+        border-radius: 1rem;
+        max-height: 150px;
+    } */
+
+    .project-title {
+        font-size: 1.2rem;
+        margin: 0.5rem;
+    }
+
+    .btnPr {
+        padding: 0.5rem 1rem;
+        font-size: 0.9rem;
+    }
+
+    .section__text__p1 {
+        font-size: 1rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .titlePr {
+        font-size: 1.8rem;
         margin-bottom: 1rem;
-        overflow: hidden;
-        /* Add margin for spacing between stacked containers */
-
     }
 
-    .contentPara{
-        display: none;
-    }
-    .Live-demo{
-        display: none;
+    .contentPara {
+        font-size: 0.8rem;
+        padding: 0.5rem 0;
     }
 }
-@media screen and (max-width: 540px) {
-    .Proj{
-        display: none;
-    }
-    
+
+/* Button Container Styles */
+.btnPr-container {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin: 1rem 0;
 }
+
+.btnPr {
+    font-weight: 600;
+    transition: all 0.3s ease;
+    padding: 0.8rem 1.5rem;
+    border-radius: 2rem;
+}
+
+.btnPr:hover {
+    background: rgb(53, 53, 53);
+    color: white;
+}
+
+/* Content Paragraph Styles */
+.contentPara {
+    margin: 1rem 0;
+    color: rgb(85, 85, 85);
+    line-height: 1.5;
+}
+
+/* Arrow Icon Styles */
+.iconPr.arrowPr {
+    display: none;
+}
+
+@media (min-width: 769px) {
+    .iconPr.arrowPr {
+        display: block;
+        position: absolute;
+        right: 5%;
+        bottom: 2rem;
+        width: 2rem;
+        /* animation: pointDown 1.5s infinite ease-in-out; */
+    }
+}
+
+
   
 /**/
 
